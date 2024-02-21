@@ -1,0 +1,783 @@
+body {
+
+    background-color: #99c7f1;
+    font-family: "Lexend Exa", sans-serif;
+  }
+  
+  nav {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateX(-50%);
+    display: inline-block;
+  
+    border-radius: 30%;
+    animation: slide-in 1s ease-out;
+  }
+  
+  ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 10%;
+    list-style-type: none;
+  }
+  ul li:not(:last-child) {
+    margin-right: 40%;  
+  }
+  ul li {
+    border: 2px solid transparent;
+    border-radius: 5%;
+    padding: 10%;
+    transition: background 0.2s;
+  }
+  ul li a {
+    color: #fcfcfc;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+ul li ul li {
+  margin: ;
+  width: calc(100% - 20%);
+  line-height: 1.7;
+}
+ul li ul li a {
+  color: #faf9f9;
+}
+ul li:hover {
+  background: #0a0a0a;
+  border: 2% solid #ffffff;
+  border-right: 2% solid #080808;
+  border-bottom: 2% solid #ffffff;
+}
+ul li:hover a {
+  color: #F9F8FD;
+}
+ul li:hover ul {
+  visibility: visible;
+  opacity: 0;
+  box-shadow: 0% 3% 5% 2% #EBECF1;
+}
+ul li:hover ul li a {
+  color: #F9F8FD;
+}
+
+@keyframes slide-in {
+  0% {
+    top: -50%;
+  }
+  40% {
+    top: 20%;
+  }
+  70% {
+    top: 10%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+.kart{
+    
+    position: absolute;
+    top:1%;
+    left:-12%;
+    width: 1500%;
+    
+    }
+    .text2{
+    
+        position: absolute;
+       
+        top:12vw;
+        left:5vw;
+        font-size:3vw;
+        color: rgb(14, 21, 43);
+        }
+        .text3{
+    font-size: 5vw;
+            position: absolute;
+            top: 11vw;
+            left:2vw;
+            color: #f5f2f2;
+            }
+            .text4{
+                position: absolute;
+            
+                top:33vw;
+                left:5vw;
+                font-size: 2vw;
+                color:  rgb(14, 21, 43); 
+                }
+                .text5{
+    
+                    position: absolute;
+                    top:20%;
+                    left:-10%;
+                    
+                    }
+                    .text6{
+    
+                        position: absolute;
+                        top:60vw;
+                        left:-10%;
+                    
+                        
+                        }
+    .text7{
+    font-size:3vw;
+    position: absolute;
+   
+    top:63vw;
+left:40vw;
+color:  rgb(17, 19, 46);
+}
+.text8{
+    font-size:1.5vw;
+    position: absolute;
+    top:65vw;
+left:5vw;
+
+}
+.text9{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:5%;
+top: 89vw; }
+.text9 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text9 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.text10{
+    display: inline-block; 
+    overflow: hidden; /* Скрываем всё за контуром */
+    position: absolute;
+  left:40%;
+  top: 90vw; }
+  .text10 img {
+    transition: 1s; /* Время эффекта */
+    display: block; 
+  }
+  .text10 img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+  .text11{
+    display: inline-block; 
+    overflow: hidden; /* Скрываем всё за контуром */
+    position: absolute;
+  left:75%;
+  top: 89vw; }
+  .text11 img {
+    transition: 1s; /* Время эффекта */
+    display: block; 
+  }
+  .text11 img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+  }
+.nn{
+        display: inline-block;
+        padding: 1% 1%;
+        background-color: rgb(88, 133, 216);
+        position: absolute;
+        top: 113vw;
+        left:71%;
+        color: #050303;
+        text-decoration: none;
+        border-radius:5%;
+        font-size: 1vw;
+        transition: background-color 0.3s ease;}
+    .nn:hover {
+    background-color:#f8f3c6;
+    }
+ 
+.text13{
+    position: absolute;
+    font-family: "Press Start 2P";
+    color: #000;
+    font-size: 7vw;
+    top:101vw;
+left:35vw;}
+
+@keyframes slideShow{
+  0%{
+    width: 100%;
+    left: 100%;}
+  5%{
+    left: 0;}
+  25%{
+    left: 0;}
+  30%{
+    width: 100%;
+    left: -100%;}
+  30.001%{
+    width: 0;
+    left: -100%;}
+  100%{
+    width: 0;
+    left: 100%;}
+  }
+.slider{
+  width: 50px;
+  color:  rgb(33, 170, 106);
+  height: 70px;
+  position: relative;
+top: 1100px;
+left: 600px;
+  overflow: hidden;}
+  
+.slide{
+  position: absolute;
+  width: 100px;
+  height: inherit;
+  overflow: hidden;
+  animation: slideShow 14s infinite;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  color:  rgb(33, 170, 106);
+  font-family: "Press Start 2P";
+  font-size: 30px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide:nth-child(1){
+  left: 0;
+  animation-delay: 11s;
+  background-image: url("Игр\ верс.JPEG");
+}
+.slide:nth-child(2){
+  left: 0;
+  animation-delay: 8s;
+  background-image: url("Sobstab.png");
+}
+.slide:nth-child(3){
+  left: 0;
+  animation-delay: 5s;
+  background-image: url("Профиль\ польз.JPEG");
+}  
+.slide:nth-child(4){
+  left: 0;
+  animation-delay: 2s;
+  background-image: url("reiigr.JPEG");
+}
+
+.text17{
+  position: relative;
+  top:200px;
+  left:-370px;
+  }
+
+
+.arrow-7 {
+  margin: 1vw;
+  position: absolute;
+  top: 132vw;
+  left: 75%;
+}
+.arrow-7 span {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(1deg);
+  margin: -10%;
+  animation: arrow-7 3s infinite;
+}
+.arrow-7 span:nth-child(2){
+  animation-delay: -0.10s;
+}
+.arrow-7 span:nth-child(3){
+  animation-delay: -0.10s;
+}
+@keyframes arrow-7 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(10vw,10vw);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(2%,2%);
+  }
+}
+
+
+.arrow-8 {
+  margin: 1vw;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 128vw;
+  left: 81vw;
+}
+.arrow-8 span {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(1deg);
+  margin: -10%;
+  animation: arrow-7 3s infinite;
+}
+.arrow-8 span:nth-child(2){
+  animation-delay: -0.10s;
+}
+.arrow-8 span:nth-child(3){
+  animation-delay: -0.10s;
+}
+@keyframes arrow-8 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(10vw,10vw);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20%,2%px);
+  }
+}
+
+
+.arrow-9 {
+  margin: 1vw;
+  transform: rotate(90deg);
+  position: absolute;
+  top:128vw;
+  left: 68%;
+}
+.arrow-9 span {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(1deg);
+  margin: -10%;
+  animation: arrow-7 3s infinite;
+}
+.arrow-9 span:nth-child(2){
+  animation-delay: -0.10s;
+}
+.arrow-9 span:nth-child(3){
+  animation-delay: -0.10s;
+}
+@keyframes arrow-9 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(10vw,10vw);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(2%,2%);
+  }
+}
+.arrow-10 {
+  margin: 1vw;
+  position: absolute;
+  transform: rotate(180deg);
+  top:123vw;
+  left:75%;
+}
+.arrow-10 span {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid #080808;
+  border-right: 5px solid #050505;
+  transform: rotate(1deg);
+  margin: -10%;
+  animation: arrow-7 3s infinite;
+}
+.arrow-10 span:nth-child(2){
+  animation-delay: -0.10s;
+}
+.arrow-10 span:nth-child(3){
+  animation-delay: -0.10s;
+}
+@keyframes arrow-7 {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20%,-20%);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20%,20%);
+  }
+}
+.text18{
+  position: absolute;
+  top:750px;
+left:-440px;
+}
+.text19{
+  position: absolute;
+  font-size: 8vw;
+  top:75vw;
+left:-30vw;
+}
+.text20{
+  position: absolute;
+  font-size: 6vw;
+  top:90vw;
+left:-30vw;
+}
+.text21{
+  position: absolute;
+  font-size: 7vw;
+  color: rgb(33, 170, 106);
+  top:105vw;
+left:-30vw;
+}
+.text22{
+  position: relative;
+  top:160vw;
+left:-50%;
+}
+
+.text25{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:60%;
+top: 286vw;}
+.text25 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text25 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.text24{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:13%;
+top: 284vw;}
+.text24 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text24 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.text23{
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+  position: absolute;
+left:40vw;
+top: 275vw;}
+.text23 img {
+  transition: 1s; /* Время эффекта */
+  display: block; 
+}
+.text23 img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.text26{
+  position: absolute;
+  text-decoration: underline rgb(33, 170, 106);
+  font-size:3vw ;
+  font-family:"Press Start 2P" ;
+  top:257vw;
+left:37vw;
+}
+.text27{
+  position: absolute;
+  text-decoration: underline dashed  rgb(33, 170, 106) ;
+  font-size:2vw ;
+  top:262vw;
+left:5vw;
+}
+.text28{
+  position: absolute;
+  text-decoration: underline #000 ;
+  font-size:3vw ;
+  top:310vw;
+left:5%;
+}
+
+.text29{
+  position: relative;
+  top:135vw;
+left:-50vw;
+}
+.text38{
+  position: absolute;
+  font-size: 1.5vw;
+  color:#6e6e6e;
+  top:190vw;
+left:5%;
+}
+.text31{
+  position: absolute;
+  font-size: 2vw;
+  text-decoration: overline ;
+  top:175vw;
+left:70%;
+}
+
+.text32{
+  position: absolute;
+  font-size:1.5vw;
+  top:175vw;
+left:5%;
+}
+.text33{
+  position: absolute;
+  font-size: 2vw;
+  top:325vw;
+left:5%;
+}
+.text34{
+  position: absolute;
+  top:322vw;
+left:2%;
+}
+.text35{
+  position: absolute;
+  top:306vw;
+left:58%;
+}
+
+.text36{
+  position: absolute;
+  font-size: 2vw;
+  text-decoration: underline ;
+  top:315vw;
+  left:70%}
+
+
+   
+
+  .tabs {
+    position: absolute; /* Относительное позиционирование */
+    top:175vw;
+left: 60%;
+   }
+   .tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    position: relative;
+    top: 4%; /* Сдвигаем вниз */
+   }
+   .tab input[type="radio"] { display: none; }
+   .tab-title {
+    background: rgb(33, 170, 106); /* Цвет фона */
+    padding: 0% 0%; /* Поля вокруг текста */
+    border: 0% solid #666; /* Параметры рамки */
+    border-bottom: none; /* Снизу линию убираем */
+   }
+   .tab-content {
+    position: relative; /* Абсолютное позиционирование */
+    border: 0% solid #666; /* Параметры рамки */
+    padding: 0%; /* Поля вокруг текста */
+    left: 1%; /* Размещаем у левого края */
+    width: calc(250% - 100%); /* Ширина содержимого */
+    display: none; /* Прячем вкладку */
+   }
+   .tab :checked + .tab-title {
+    position: relative; /* Относительное позиционирование */
+    background: #fff; /* Цвет фона */
+    top: 5%; /* Сдвигаем вниз */
+    z-index: 4%; /* Отображаем поверх содержимого */
+   }
+   .tab :checked ~ .tab-content {
+    display: block; /* Показываем активную вкладку */
+   }
+
+   .luv{
+    display: inline-block;
+    padding: 2% 2%;
+  
+    position: absolute;
+    top: 1%;
+    left:55%;
+    color: #f7f4f4;
+    text-decoration: underline #f5f2f2;
+    border-radius:5%;
+    font-size: 1vw;
+    transition: background-color 0.3s ease;}
+.luv:hover {
+background-color: rgb(14, 21, 43);;
+}
+
+.lu{
+  display: inline-block;
+  padding: 2% 2%;
+
+  position: absolute;
+  top: 1%;
+  left:70%;
+  color: #f7f4f4;
+  text-decoration: underline #f5f2f2;
+  border-radius:5%;
+  font-size: 1vw;
+  transition: background-color 0.3s ease;}
+.lu:hover {
+background-color: rgb(14, 21, 43); ;
+}
+.l{
+  display: inline-block;
+  padding: 2% 2%;
+
+  position: absolute;
+  top: 1%;
+  left:80%;
+  color: #f7f4f4;
+  text-decoration: underline #f5f2f2;
+  border-radius:5%;
+  font-size: 1vw;
+  transition: background-color 0.3s ease;}
+.l:hover {
+background-color: rgb(14, 21, 43); ;
+}
+
+.text77{
+  position:relative;
+  top:-72vw;
+  width: 100%;
+left:-5%;}
+.text130{
+  position: absolute;
+  color: #F9F8FD;
+  font-size: 4vw;
+  top:81vw;
+left:35vw;}
+.text131{
+  position: absolute;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:108vw;
+left:5vw;}
+.text132{
+  position: absolute;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:108vw;
+left:39vw;}
+.text133{
+  position: absolute;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:108vw;
+left:73vw;}
+
+.nh{
+  display: inline-block;
+  padding: 1% 1%;
+  background-color: rgb(88, 133, 216);;
+  position: absolute;
+  top: 113vw;
+  left:81%;
+  color: #050303;
+  text-decoration: none;
+  border-radius:5%;
+  font-size: 1vw;
+  transition: background-color 0.3s ease;}
+.nh:hover {
+background-color:#f8f3c6;
+}
+.np{
+  display: inline-block;
+  padding: 1% 1%;
+  background-color:rgb(88, 133, 216) ;
+  position: absolute;
+  top: 113vw;
+  left:10%;
+  color: #050303;
+  text-decoration: none;
+  border-radius:5%;
+  font-size: 1vw;
+  transition: background-color 0.3s ease;}
+.np:hover {
+background-color:#f8f3c6;
+}
+.no{
+  display: inline-block;
+  padding: 1% 1%;
+  background-color:rgb(88, 133, 216) ;
+  position: absolute;
+  top: 113vw;
+  left:45%;
+  color: #050303;
+  text-decoration: none;
+  border-radius:5%;
+  font-size: 1vw;
+  transition: background-color 0.3s ease;}
+.no:hover {
+background-color:#f8f3c6;
+}
+
+.text79{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:-69vw;
+left:2vw;}
+.text80{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:-98vw;
+left:35vw;}
+.text81{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:-128vw;
+left:70vw;}
+.text139{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 4vw;
+  top:-160vw;
+left:30vw;}
+.text140{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:-140vw;
+left:5vw;}
+.text141{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:-145vw;
+left:75vw;}
+.text142{
+  position: relative;
+  color: #F9F8FD;
+  font-size: 2vw;
+  top:-147vw;
+left:43vw;}
+
+.text310{
+  position: relative;
+  color: #000000;
+  font-size: 2vw;
+  top:33vw;
+left:70vw;}
+.text15{
+  position: relative;
+  color: #000000;
+  font-size: 2vw;
+  top:175vw;
+left:5vw;}
